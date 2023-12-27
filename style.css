@@ -652,16 +652,16 @@ textarea {
         display: none;
     }
 
-    .contact-link{
+    .contact-link {
         display: none;
     }
 
-    .header-container{
+    .header-container {
         background: url(./img/menu.png);
         background-repeat: no-repeat;
         background-size: 40px;
         background-position: right 60px top 73px;
-        
+
     }
 }
 
@@ -722,5 +722,45 @@ textarea {
         align-items: center;
 
     }
+
+}
+
+@media (max-width:340px) {
+    .logo {
+        width: 128px;
+        padding-top: 5px;
+    }
+
+    .hero-title {
+        color: #FFF;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .title-coral {
+        color: #F67E7E;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .hero-text {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 28px;
+        width: 327px;
+    }
+
+    .logo-link{
+        padding-right: 100px;
+
+    }
+
+
+
+
+
 
 }

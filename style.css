@@ -139,7 +139,12 @@ body {
     height: 684px;
     margin-left: auto;
     margin-right: auto;
+    background: url(./img/bg-top.png);
+    background-repeat: no-repeat;
     background-color: var(--sacramento-green);
+    background-position: right top;
+
+
 }
 
 .medium-container {
@@ -648,6 +653,8 @@ textarea {
 /* responsive */
 
 @media (max-width:700px) {
+
+
     .header-nav {
         display: none;
     }
@@ -666,6 +673,21 @@ textarea {
 }
 
 @media (max-width:1140px) {
+
+    /* medium-responsive */
+    .medium-container {
+        flex-direction: column;
+    }
+
+
+    .medium-text {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+
+
     .hero-title {
         text-align: center;
         font-size: 64px;
@@ -725,7 +747,7 @@ textarea {
 
 }
 
-@media (max-width:340px) {
+@media (max-width:500px) {
     .logo {
         width: 128px;
         padding-top: 5px;
@@ -754,15 +776,103 @@ textarea {
         width: 250px;
     }
 
-    .header-container{
-
-       
+    .header-left {
+        margin-left: -30px;
     }
 
-    .hero-container{
+
+    .hero-container {
         padding-right: 70px;
-
     }
 
+
+}
+
+
+@media (max-width:630px) {
+    .medium-text {
+        width: 300px;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .medium-text {
+        margin-bottom: 50px;
+    }
+
+    .medium-copy {
+        height: 1073px;
+    }
+
+    .medium-box {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    .medium-img {
+        margin: 0 auto;
+    }
+
+    .medium-h3 {
+        color: #F67E7E;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    .medium-p {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+}
+
+@media (max-width:520px){
+    .medium-p{
+        width: 327px;
+    }
+
+    .medium-h3{
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    .medium-flex{
+        margin-right: 100px;
+    }
+
+}
+
+@media (max-width:460px){
+    .medium-text{
+        width: 240px;
+    }
+}
+
+@media (max-width:430px){
+    
+    .medium-h3 {
+        color: #F67E7E;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 10px;
+        text-align: center;
+    }
+
+    .medium-p {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+
+  
+   
 
 }

@@ -758,6 +758,10 @@ textarea {
 
     }
 
+    .header-container{
+        display: none;
+    }
+
 
 
 

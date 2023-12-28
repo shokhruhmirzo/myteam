@@ -976,10 +976,12 @@ textarea {
 @media(max-width:350px) {
 
     /* grid */
+    .grid-item{
+        margin-left: -25px;
+    }
 
     .grid-h1{
-        padding-left: -90px;
-        
+        margin-left: -25px;
     }
 
     .medium-h3 {

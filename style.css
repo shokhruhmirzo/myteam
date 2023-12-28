@@ -18,6 +18,7 @@
 body {
     font-family: 'Livvic', sans-serif;
     background: var(--midnight-green);
+    flex-wrap: wrap;
 }
 
 .container {
@@ -803,7 +804,7 @@ textarea {
     }
 
     .medium-copy {
-        height: 1073px;
+        height: 1200px;
     }
 
     .medium-box {
@@ -834,12 +835,11 @@ textarea {
 
 @media (max-width:520px){
     .medium-p{
-        width: 327px;
+        width: 350px;
     }
 
     .medium-h3{
-        text-align: center;
-        margin-right: 100px;
+        margin-right:500px;
     }
 
     .medium-flex{
@@ -862,6 +862,9 @@ textarea {
         font-weight: 400;
         line-height: 10px;
         text-align: center;
+        padding-right: 200px;
+        margin-bottom: 20px;
+        margin-top: 16px;
     }
 
     .medium-p {
@@ -869,10 +872,28 @@ textarea {
         font-size: 15px;
         font-weight: 600;
         line-height: 25px;
+        width: 250px;
+    }
+}
+
+@media(max-width:350px){
+    .medium-h3 {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 10px;
     }
 
+  .medium-p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
 
-  
-   
+.medium-img{
+    margin-left: 90px;
+}
 
+.medium-container{
+    margin-left: -40px;
+}
 }

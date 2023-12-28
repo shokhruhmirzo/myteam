@@ -281,9 +281,9 @@ body {
 }
 
 .grid-context {
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto auto;
-    padding-left: 20px;
+    padding-left: 20px; */
 }
 
 /* content */
@@ -446,10 +446,19 @@ address {
 }
 
 .grid-medium {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
-    row-gap: 76px;
+    row-gap: 76px; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.grid-context {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .box {
@@ -654,8 +663,6 @@ textarea {
 /* responsive */
 
 @media (max-width:700px) {
-
-
     .header-nav {
         display: none;
     }
@@ -674,6 +681,65 @@ textarea {
 }
 
 @media (max-width:1140px) {
+
+    /* grid */
+
+    .grid {
+        height: 1350px;
+
+    }
+
+    .grid-context {
+        flex-direction: column;
+
+    }
+
+    .grid-title {
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        width: 450px;
+
+    }
+
+    .grid-span {
+        color: #79C8C7;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    .grid-p {
+        color: #FFF;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+        width: 573px;
+    }
+
+    .grid-h3 {
+        color: #79C8C7;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        margin-left: 110px;
+    }
+
+    .grid-p2 {
+        margin-left: 100px;
+    }
+
+    .grid-img {
+        margin-left: 100px;
+    }
+
+    .grid-item {
+        margin-bottom: 70px;
+    }
 
     /* medium-responsive */
     .medium-container {
@@ -799,6 +865,37 @@ textarea {
 
 @media (max-width:600px) {
 
+    /* grid */
+    .grid-title {
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        width: 320px;
+    }
+
+    .grid-p {
+        color: #FFF;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+        width: 327px;
+        margin: 0 auto;
+    }
+
+    .grid-h3 {
+        margin: 0 auto;
+    }
+
+    .grid-p2 {
+        margin: 0 auto;
+    }
+
+    .grid-img {
+        margin: 0 auto;
+    }
+
     .medium-text {
         margin-bottom: 50px;
     }
@@ -833,29 +930,29 @@ textarea {
     }
 }
 
-@media (max-width:520px){
-    .medium-p{
+@media (max-width:520px) {
+    .medium-p {
         width: 350px;
     }
 
-    .medium-h3{
-        margin-right:500px;
+    .medium-h3 {
+        margin-right: 500px;
     }
 
-    .medium-flex{
+    .medium-flex {
         margin-right: 100px;
     }
 
 }
 
-@media (max-width:460px){
-    .medium-text{
+@media (max-width:460px) {
+    .medium-text {
         width: 240px;
     }
 }
 
-@media (max-width:430px){
-    
+@media (max-width:430px) {
+
     .medium-h3 {
         color: #F67E7E;
         font-size: 20px;
@@ -876,24 +973,55 @@ textarea {
     }
 }
 
-@media(max-width:350px){
+@media(max-width:350px) {
+
+    /* grid */
+
+    .grid-h1{
+        padding-left: -90px;
+        
+    }
+
     .medium-h3 {
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 10px;
     }
 
-  .medium-p {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 25px;
+    .medium-p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .medium-img {
+        margin-left: 90px;
+    }
+
+    .medium-container {
+        margin-left: -40px;
+    }
 }
 
-.medium-img{
-    margin-left: 90px;
-}
+@media (max-width:380px) {
 
-.medium-container{
-    margin-left: -40px;
-}
+    .grid{
+        height: 1510px;
+    }
+    .grid-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+        width: 280px;
+    }
+
+    .grid-span {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    .grid-p{
+        width: 250px;
+    }
 }
